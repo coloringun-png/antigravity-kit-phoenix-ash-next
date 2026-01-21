@@ -182,22 +182,24 @@ Does it need...?
 
 ---
 
-## 10. Project Structure
+## 11. Web Gaming & Canvas Wrapper
 
-```
-app/
-├── (marketing)/     # Route group
-│   └── page.tsx
-├── (dashboard)/
-│   ├── layout.tsx   # Dashboard layout
-│   └── page.tsx
-├── api/
-│   └── [resource]/
-│       └── route.ts
-└── components/
-    └── ui/
-```
+Next.js can be used as a modern **container (wrapper)** wrapping heavy game engines (Phaser, Three.js, Babylon.js).
+
+### Implementation Pattern
+
+| Pattern | Action | Reason |
+|---------|--------|--------|
+| **Dynamic Import** | `next/dynamic` with `ssr: false` | Game engines use `window/document` which are not available on server. |
+| **Ref Storage** | Store instance in `useRef` | Prevent unnecessary re-renders of the game instance. |
+| **Lifecycle** | Clean up on `useEffect` unmount | Prevent memory leaks (call `game.destroy()`). |
+| **HUD Layer** | Use React components over Canvas | Better accessibility, styling (Tailwind), and rapid UI development. |
+
+### Data Flow Strategy
+
+1. **Next.js -> Game**: `gameRef.current.events.emit('CHANGE_SCENE', data)`
+2. **Game -> Next.js**: Listen for custom events inside `useEffect` and update React state/dispatch actions.
 
 ---
 
-> **Remember:** Server Components are the default for a reason. Start there, add client only when needed.
+> **Remember:** Server Components are the default for a reason. Start there, add client only when needed. For gaming, the wrapper component MUST be a Client Component.

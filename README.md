@@ -1,10 +1,8 @@
-# Antigravity Kit
-> AI Agent templates with Skills, Agents, and Workflows
+# Antigravity Kit (Phoenix & Ash Edition)
+> AI Agent kit focused on Phoenix, Ash Framework, and Next.js (Web Gaming).
 
 <div  align="center">
-    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit?theme=dark" alt="Antigravity Kit - Nổi bật trên Unikorn.vn" style="width: 210px; height: 54px;" width="210" height="54" /></a>
-    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit/rank?theme=dark&type=daily" alt="Antigravity Kit - Hàng ngày" style="width: 250px; height: 64px;" width="250" height="64" /></a>
-    <a href="https://launch.j2team.dev/products/antigravity-kit" target="_blank"><img src="https://launch.j2team.dev/badge/antigravity-kit/dark" alt="Antigravity Kit on J2TEAM Launch" width="250" height="54" /></a>
+    <a href="https://unikorn.vn/p/antigravity-kit?ref=unikorn" target="_blank"><img src="https://unikorn.vn/api/widgets/badge/antigravity-kit?theme=dark" alt="Antigravity Kit - Featured on Unikorn.vn" style="width: 210px; height: 54px;" width="210" height="54" /></a>
 </div>
 
 ## Quick Install
@@ -13,111 +11,53 @@
 npx @vudovn/ag-kit init
 ```
 
-Or install globally:
-
-```bash
-npm install -g @vudovn/ag-kit
-ag-kit init
-```
-
-This installs the `.agent` folder containing all templates into your project.
+This command installs the `.agent` folder equipped with Phoenix/Ash and Next.js Web Gaming expertise into your project.
 
 ## What's Included
 
-| Component | Count | Description |
+| Component | Focus | Description |
 |-----------|-------|-------------|
-| **Agents** | 16 | Specialist AI personas (frontend, backend, security, etc.) |
-| **Skills** | 40 | Domain-specific knowledge modules |
-| **Workflows** | 11 | Slash command procedures |
+| **Backend Specialist** | Elixir/Ash | Ash Resource-based declarative backend design. |
+| **Game Developer** | Next.js Wrapper | Hybrid structure wrapping game engines with Next.js. |
+| **Database Architect** | Ash/Postgres | Performance-oriented declarative data modeling. |
+| **Workflows** | Custom | Commands optimized for Phoenix/Ash and NextJS-Game projects. |
+
+## Why Elixir & Next.js?
+
+Antigravity Kit combines the most efficient stacks of **2025 standards**:
+- **Ash Framework**: Reduces code writing by 70% by defining business logic declaratively.
+- **Next.js Wrapper**: Integrates game libraries (Phaser, Threejs) into modern web architecture.
+- **Phoenix Channels**: Flawlessly provides real-time multiplayer experience.
 
 ## Structure
 
 ```
 .agent/
-├── agents/          # 16 Specialist Agents
-├── skills/          # 40 Skills
-├── workflows/       # 11 Slash Commands
-├── rules/           # Workspace Rules
-└── ARCHITECTURE.md  # Full documentation
+├── agents/          # Ash and Next.js Game expert Agents
+├── skills/          # Domain specific skills (ash-framework-expert, web-game-design etc.)
+├── workflows/       # Project cycle commands
+└── ARCHITECTURE.md  # Detailed architecture document
 ```
 
 ## Usage
 
-### Using Agents
+### Using Specialists
 
-Mention an agent by name to invoke specialized expertise:
+Agents automatically understand the Elixir or Next.js code in your project and generate code according to Ash principles:
 
 ```
-Use the security-auditor agent to review authentication
-Use the frontend-specialist to analyze React components
+Use the backend-specialist to design a Ticket resource with Ash
+Use the game-developer to wrap Three.js inside a Next.js component
 ```
 
-### Using Skills
-
-Skills are loaded automatically based on task context. The AI reads skill descriptions and applies relevant knowledge.
-
-### Using Workflows
-
-Invoke workflows with slash commands:
+### Workflows
 
 | Command | Description |
 |---------|-------------|
-| `/brainstorm` | Explore options before implementation |
-| `/create` | Create new features or apps |
-| `/debug` | Systematic debugging |
-| `/deploy` | Deploy application |
-| `/enhance` | Improve existing code |
-| `/orchestrate` | Multi-agent coordination |
-| `/plan` | Create task breakdown |
-| `/preview` | Preview changes locally |
-| `/status` | Check project status |
-| `/test` | Generate and run tests |
-| `/ui-ux-pro-max` | Design with 50 styles |
+| `/plan` | Project plan starting from Ash Resource hierarchy |
+| `/create` | Creating new Phoenix/Ash or Next.js projects |
+| `/orchestrate` | Full-stack Elixir-NextJS synchronization |
 
-Example:
-```
-/brainstorm authentication system
-/create landing page with hero section
-/debug why login fails
-```
+---
 
-**📖 Full Guide:** See [Creating a Web App Example](https://antigravity-kit.vercel.app//docs/guide/examples/web-app) for a complete step-by-step tutorial.
-
-### Using Rules
-
-Rules in `.agent/rules/` are automatically applied. The main configuration file is `GEMINI.md`.
-
-## CLI Tool
-
-| Command | Description |
-|---------|-------------|
-| `ag-kit init` | Install `.agent` folder into your project |
-| `ag-kit update` | Update to the latest version |
-| `ag-kit status` | Check installation status |
-
-### Options
-
-```bash
-ag-kit init --force        # Overwrite existing .agent folder
-ag-kit init --path ./myapp # Install in specific directory
-ag-kit init --branch dev   # Use specific branch
-ag-kit init --quiet        # Suppress output (for CI/CD)
-ag-kit init --dry-run      # Preview actions without executing
-```
-
-## Documentation
-
-- **[Web App Example](https://antigravity-kit.vercel.app//docs/guide/examples/web-app)** - Step-by-step guide to creating a web application
-- **[Online Docs](https://antigravity-kit.vercel.app//docs)** - Browse all documentation online
-
-## Buy me coffee
-
-<p align="center">
-  <a href="https://buymeacoffee.com/vudovn">
-    <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
-  </a>
-</p>
-
-## License
-
-MIT © Vudovn
+**📖 Full Guide:** Check out [ARCHITECTURE.md](.agent/ARCHITECTURE.md) for detailed information.
